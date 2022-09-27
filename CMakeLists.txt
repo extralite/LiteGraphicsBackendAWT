@@ -9,6 +9,7 @@ glad_add_library(glad EXCLUDE_FROM_ALL STATIC LOADER API gl:core=3.3)
 
 set(LITE_GFX_AWT_SOURCES
         src/AWTSurface.cpp
+        src/GLCanvas.cpp
         src/GLContext.cpp
         )
 
