@@ -53,7 +53,7 @@ void GLContext::Create(GLContextRef ctx) {
     }
 
     // TODO: Replace with LiteGraphics abstraction
-    int gl_version = gladLoadGL((GLADloadfunc) glXGetProcAddressARB);
+    int gl_version = gladLoaderLoadGL();
     if (!gl_version) {
         std::cerr << "Unable to load OpenGL" << std::endl;
         return;
